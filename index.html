@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=xxxxxx, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="intro">
+        <figure class="figura1 figura">
+            <h3>maquina!!!</h3>
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/53ce9d4d-d5be-4e97-afbc-e3caad605497/dh3z20t-d9893aa7-6b8a-42f0-b1b0-479ec74bffb9.png/v1/fit/w_828,h_578/rock__paper_and_scissors_vector_88_by_rps_addicted_dh3z20t-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODkyIiwicGF0aCI6IlwvZlwvNTNjZTlkNGQtZDViZS00ZTk3LWFmYmMtZTNjYWFkNjA1NDk3XC9kaDN6MjB0LWQ5ODkzYWE3LTZiOGEtNDJmMC1iMWIwLTQ3OWVjNzRiZmZiOS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.RrGnuHZSkq135rhIjQ7Og1PRU3u7o7qxUsDTP9N7EFo" alt="">
+        </figure>
+        <div id="victoria"><h2>ganador:span </h2> <span id="vict"></span></div>
+        <div class="menu" id="menu">
+            <h1>VS</h1>
+            <form action="" class="numero_batallas:">
+                <label for="batallas">Número de Peleas:</label>
+                <input type="range" name="num" id="batallas" min="1" max="7" value="4" oninput="updateValue(this.value)">
+                <input type="button" value="Play" id="benviar">
+            </form>
+            
+        </div>
+        <figure class="figura2 figura">
+            <h3>usuario</h3>
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/53ce9d4d-d5be-4e97-afbc-e3caad605497/dhjqq58-fefd14af-e99f-4c17-8e36-0310d1c38dbf.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUzY2U5ZDRkLWQ1YmUtNGU5Ny1hZmJjLWUzY2FhZDYwNTQ5N1wvZGhqcXE1OC1mZWZkMTRhZi1lOTlmLTRjMTctOGUzNi0wMzEwZDFjMzhkYmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HyYFjVy0IklWrvYPFV8OxPbE7bdH3LCJpwrWU2ipiCI" alt="">
+        </figure>
+    </div>
+    <header>
+        <h1>piedra papel o tigeras</h1>
+        
+    </header>
+    <main>
+        <div class="programa" class="puntos"><h2>programa: <span id="punt_prog" >0</span></h2></div>
+        <section class="total_cartas">
+        <section class="cartasm">
+            <button class="cartam" id="piedram">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/53ce9d4d-d5be-4e97-afbc-e3caad605497/dgwopkg-596e5c25-33cc-420b-9e01-f55636f63432.png/v1/fill/w_286,h_350/rock_vector__10_by_rps_addicted_dgwopkg-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjA0IiwicGF0aCI6IlwvZlwvNTNjZTlkNGQtZDViZS00ZTk3LWFmYmMtZTNjYWFkNjA1NDk3XC9kZ3dvcGtnLTU5NmU1YzI1LTMzY2MtNDIwYi05ZTAxLWY1NTYzNmY2MzQzMi5wbmciLCJ3aWR0aCI6Ijw9NDk0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.dQkpcOVXRQMxt8rPTuammitlC-9W2tDERFML83jnHQw" alt="piedra">
+                <p>piedra</p>
+            </button>
+            <button class="cartam " id="papelm">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/53ce9d4d-d5be-4e97-afbc-e3caad605497/dgwp9pb-61bdd30f-02b0-4832-8a04-b6d401800dc1.png/v1/fill/w_286,h_350/paper_vector__11_by_rps_addicted_dgwp9pb-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjA0IiwicGF0aCI6IlwvZlwvNTNjZTlkNGQtZDViZS00ZTk3LWFmYmMtZTNjYWFkNjA1NDk3XC9kZ3dwOXBiLTYxYmRkMzBmLTAyYjAtNDgzMi04YTA0LWI2ZDQwMTgwMGRjMS5wbmciLCJ3aWR0aCI6Ijw9NDk0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.ezipUKnhGOsXPLuh6Medj1W9NFiwq-d6h1JIQO82OxE" alt="papel">
+                <p>papel</p>
+            </button>
+            <button class="cartam" id="tijeram">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/53ce9d4d-d5be-4e97-afbc-e3caad605497/dgwq9wr-340072ca-1df3-4c22-bdf1-48058af59b1a.png/v1/fill/w_286,h_350/scissors_vector__15_by_rps_addicted_dgwq9wr-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjA0IiwicGF0aCI6IlwvZlwvNTNjZTlkNGQtZDViZS00ZTk3LWFmYmMtZTNjYWFkNjA1NDk3XC9kZ3dxOXdyLTM0MDA3MmNhLTFkZjMtNGMyMi1iZGYxLTQ4MDU4YWY1OWIxYS5wbmciLCJ3aWR0aCI6Ijw9NDk0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.WdMGZMAv5uR3NqR1Ikcrf2RcTORsVZRQdtkwQ8stF1o" alt="tijeras">
+                <p>tijeras</p>
+            </button>
+            </section>
+            <section id="p_ganado"><h2>punto para:<span id="punts"></span></h2></section>
+        <section class="cartas">
+        <button class="carta " id="piedra">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/53ce9d4d-d5be-4e97-afbc-e3caad605497/dgwopkg-596e5c25-33cc-420b-9e01-f55636f63432.png/v1/fill/w_286,h_350/rock_vector__10_by_rps_addicted_dgwopkg-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjA0IiwicGF0aCI6IlwvZlwvNTNjZTlkNGQtZDViZS00ZTk3LWFmYmMtZTNjYWFkNjA1NDk3XC9kZ3dvcGtnLTU5NmU1YzI1LTMzY2MtNDIwYi05ZTAxLWY1NTYzNmY2MzQzMi5wbmciLCJ3aWR0aCI6Ijw9NDk0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.dQkpcOVXRQMxt8rPTuammitlC-9W2tDERFML83jnHQw" alt="piedra">
+            <p>Piedra</p>
+        </button>
+            
+        <button class="carta " id="papel">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/53ce9d4d-d5be-4e97-afbc-e3caad605497/dgwp9pb-61bdd30f-02b0-4832-8a04-b6d401800dc1.png/v1/fill/w_286,h_350/paper_vector__11_by_rps_addicted_dgwp9pb-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjA0IiwicGF0aCI6IlwvZlwvNTNjZTlkNGQtZDViZS00ZTk3LWFmYmMtZTNjYWFkNjA1NDk3XC9kZ3dwOXBiLTYxYmRkMzBmLTAyYjAtNDgzMi04YTA0LWI2ZDQwMTgwMGRjMS5wbmciLCJ3aWR0aCI6Ijw9NDk0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.ezipUKnhGOsXPLuh6Medj1W9NFiwq-d6h1JIQO82OxE" alt="papel">
+            <p>papel</p>
+        </button>
+        <button class="carta " id="tijera">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/53ce9d4d-d5be-4e97-afbc-e3caad605497/dgwq9wr-340072ca-1df3-4c22-bdf1-48058af59b1a.png/v1/fill/w_286,h_350/scissors_vector__15_by_rps_addicted_dgwq9wr-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjA0IiwicGF0aCI6IlwvZlwvNTNjZTlkNGQtZDViZS00ZTk3LWFmYmMtZTNjYWFkNjA1NDk3XC9kZ3dxOXdyLTM0MDA3MmNhLTFkZjMtNGMyMi1iZGYxLTQ4MDU4YWY1OWIxYS5wbmciLCJ3aWR0aCI6Ijw9NDk0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.WdMGZMAv5uR3NqR1Ikcrf2RcTORsVZRQdtkwQ8stF1o" alt="tijeras">
+            <p>tijeras</p>
+        </button>
+        </section>
+    </section>
+    <div class="usuario" class="puntos"><h2>usuario: <span id="punt_usua" >0</span></h2></div>
+    </main>
+    <span id="final">0</span>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

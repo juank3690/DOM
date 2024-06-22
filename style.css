@@ -1,0 +1,236 @@
+*{
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+#intro{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffa420;
+    opacity: 1;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.figura1{
+    animation: mover-arriba-abajo 1s ease-in-out infinite alternate;
+}
+
+@keyframes mover-arriba-abajo {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(5px); /* Ajusta la distancia de movimiento */
+    }
+}
+.figura2{
+    animation: mover-adelante-atras 0.1ms ease-in-out infinite alternate;
+}
+
+@keyframes mover-adelante-atras {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(3px); /* Ajusta la distancia de movimiento */
+    }
+}
+
+.figura img {
+    width: 700px;
+}
+.figura2 img{
+    width: 600px;
+}
+
+#intro .figure{
+    z-index: 12;
+    opacity: 0;
+    position: relative;
+
+}
+
+.figura1 h3{
+    font-size: 70px;
+    transform: rotate(-10deg);
+    
+}
+.figura2 h3{
+    font-size: 70px;
+    transform: rotate(10deg) translateX(200px);
+    
+}
+
+.menu{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #cf8417;
+    box-shadow: 3px 3px 4px #cf8417;
+}
+
+.menu h1{
+    font-size: 40px;
+}
+.numero_batallas{
+    font-size: 30px;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ #benviar{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #ecec53;
+    margin-top: 20px;
+}
+
+
+header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    margin: 0;
+    
+}
+main{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    
+}
+.puntos{
+    display: flex;
+    flex-direction: column;
+}
+
+.programa{
+    position: absolute;
+    top: -15px;
+    left: 45%;
+}
+
+#p_ganado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50;
+    
+}
+
+.usuario{
+    position: absolute;
+    bottom: -15px;
+    left: 45%;
+}
+/* total cartas
+*/
+
+.total_cartas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/*
+maquina cartas
+*/
+.cartasm{
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.cartam{
+    margin-right: 10px;
+}
+
+
+
+
+/*
+usuario cartas
+*/
+
+.carta img, .cartam  img{
+    width: 230px;
+    height: 260px;
+}
+
+
+.cartas{
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.carta{
+    margin-right: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carta:hover{
+    transform: scale(1.0);
+}
+
+#piedra:hover{
+ border: 5px solid #a46424;
+}
+#papel:hover{
+ border: 5px solid #ecec53;
+}
+#tijera:hover{
+ border: 5px solid #5353ec;
+}
+
+
+#final{
+    z-index: -1000;
+}
+#victoria{
+    display: none;
+}
+
+
